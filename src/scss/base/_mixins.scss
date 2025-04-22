@@ -1,0 +1,106 @@
+@mixin mediaBg() {
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    @content;
+  }
+}
+
+$desktop-above: 1439px;
+$desktop: 1440px;
+
+$tablet-above: 1219px;
+$tablet: 1220px;
+
+$mobile-above: 840px;
+$mobile: 839px;
+
+$mobile-s-above: 561px;
+$mobile-s: 560px;
+
+@mixin desktop-above {
+  @media (min-width: $desktop-above) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin tablet-above {
+  @media (min-width: $tablet-above) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin mobile-above {
+  @media (min-width: $mobile-above) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin mobile-s-above {
+  @media (min-width: $mobile-s-above) {
+    @content;
+  }
+}
+
+@mixin mobile-s {
+  @media (max-width: $mobile-s) {
+    @content;
+  }
+}
+
+
+@mixin hover {
+  @media (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+
+  @media (hover: none) {
+    &:active {
+      @content;
+    }
+  }
+}
+
+@mixin abs-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
+
+@mixin font-style($size, $height, $weight) {
+  font-size: #{$size}px;
+  line-height: $height / $size;
+  font-weight: $weight;
+}
+
+@mixin abs-bl($bottom,$left) {
+  position: absolute;
+  left: #{$left}px;
+  bottom: #{$bottom}px;
+}
+
+@mixin abs-tbl($top,$bottom,$left) {
+  position: absolute;
+  top: #{$top}px;
+  left: #{$left}px;
+  bottom: #{$bottom}px;
+}

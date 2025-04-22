@@ -1,6 +1,11 @@
 // Базовые стили подключаем вручную
-@import 'base/reset';
-@import 'base/variables';
+
+@import 'base/vars';        // Переменные
+@import 'base/variables';   // Дополнительные переменные
+@import 'base/reset';       // Сброс стилей
+@import 'base/mixins';      // Миксины
+@import 'base/utils';       // Утилиты и вспомогательные классы
+@import 'base/container';   // Структурирующие элементы
 
 // Все блоки подключаются автоматически
 @import 'block/*';

@@ -1,0 +1,21 @@
+:root {
+  --container-width: 1184px;
+  --container-padding: 32px;
+
+  --font-main: "Inter", sans-serif;
+  --font-accent: 'Poppins', sans-serif;
+  --font-nav: "Space Grotesk", sans-serif;
+  --font-titles: var(--font-accent);
+
+  --cotainer-width: 1440px;
+  --container-padding-x: 20px;
+
+  --border-radius-small: 4px;
+  --border-radius-normal: 6px;
+  --border-radius-big: 8px;
+
+
+  --laptop-size: 1199px;
+  --tablet-size: 959px;
+  --mobile-size: 599px;
+}
